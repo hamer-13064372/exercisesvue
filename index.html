@@ -9,10 +9,28 @@
 </head>
 <body>
         <div id="app">
-
+            <div class="container">
+                <h3>Operaciones Basicas</h3>
+                <br>
+                <h1 v-text="rta"></h1>
+       <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Numero 1</span>
+        <input v-model.number="num1" type="number" class="form-control" placeholder="Ingrese un Numero 1">
+      </div>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Numero 2</span>
+        <input v-model.number="num2" type="number" class="form-control" placeholder="Ingrese un Numero 2">
+      </div>
+      <button @click="sumar" type="button" class="btn btn-primary">sumar</button>
+        <button @click="restar" type="button" class="btn btn-secondary">restar</button>
+         <button @click="multiplicar" type="button" class="btn btn-success">multiplicar</button>
+         <button @click="dividir" type="button" class="btn btn-danger">dividir</button>
+      
+                  </div>
+       
         </div>
-                   
-            
+                 
+           
 </body>
 <script src="js/vue.js"></script>
 <script src="js/app.js"></script>
